@@ -48,7 +48,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
         vm_size         = "${var.aks_map["aks_agent_vm_size"]}"
         os_type         = "Linux"
         os_disk_size_gb = "${var.aks_map["aks_agent_os_disk_size"]}"
-        vnet_subnet_id  = "${var.subnets_map["${var.aks_subnet_name}"]}"
+        vnet_subnet_id  = "${var.subnet_id}"
         
     }
 
