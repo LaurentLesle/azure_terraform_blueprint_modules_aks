@@ -31,10 +31,6 @@ variable "virtual_network_name" {
   description = "Virtual network name"
 }
 
-variable "aks_subnet_name" {
-  description = "AKS Subnet Name."
-}
-
 variable "appgw_subnet_name" {
   description = "Application Gateway Subnet Name."
 }
@@ -48,8 +44,7 @@ variable "prefix" {
   
 }
 
-variable "subnets_map" {
-    type = "map"
+variable "subnet_id" {
 }
 
 variable "log_analytics_workspace_id" {
