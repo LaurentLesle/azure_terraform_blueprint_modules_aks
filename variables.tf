@@ -44,7 +44,8 @@ variable "prefix" {
   
 }
 
-variable "subnet_id" {
+variable "subnet_ids" {
+    type = "map"
 }
 
 variable "log_analytics_workspace_id" {
