@@ -10,12 +10,6 @@ resource "azurerm_role_assignment" "ra2" {
   principal_id         = "${var.service_principal_map["object_id"]}"
 }
 
-resource "azurerm_role_assignment" "ra3" {
-  scope                = "${var.subnet_ids["${var.appgw_subnet_name}"]}"
-  role_definition_name = "Contributor"
-  principal_id         = "${var.user_msi_map["client_id"]}"
-}
-
 resource "azurerm_role_assignment" "ra4" {
   scope                = "${var.resource_group_id}"
   role_definition_name = "Reader"
