@@ -31,11 +31,6 @@ variable "virtual_network_name" {
   description = "Virtual network name"
 }
 
-variable "appgw_subnet_name" {
-  description = "Application Gateway Subnet Name."
-}
-
-
 variable "public_ssh_key_openssh" {
   description = "Public key in openssh format for SSH."
 }
